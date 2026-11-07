@@ -7,7 +7,7 @@
 ## Notes: Hekili Forever: a priority helper for WoW Forever, based on the original work by Hekili. A fork made with the original author's permission; not the original project.
 ## X-Website: https://github.com/zmsl/hekili
 ## X-Curse-Project-ID: 1753387
-## SavedVariables: HekiliDB
+## SavedVariables: HekiliDB, HekiliDiagnosticDB
 ## OptionalDeps: ConsolePort, ElvUI, LibDualSpec-1.0, Masque, WeakAuras
 
 embeds.xml
@@ -88,6 +88,7 @@ Engine\Snapshot.lua
 
 Engine\Sim\Targets.lua
 Options\DevTools.lua
+Diagnostics\WarriorCapability.lua
 Options\ChatCommands.lua
 Options\StyleOptions.lua
 Options\Options.lua
