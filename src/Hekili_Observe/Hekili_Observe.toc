@@ -1,0 +1,10 @@
+## Interface: 16001
+## Title: Hekili Observe
+## Author: defzach
+## Version: 0.1.0
+## Notes: Opt-in session telemetry for Hekili Forever. Recording is off until /hekobs start. Does not change recommendations.
+## Dependencies: Hekili
+## SavedVariables: HekiliObserveDB
+
+Observe.lua
+Boot.lua

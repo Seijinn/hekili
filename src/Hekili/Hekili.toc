@@ -83,6 +83,7 @@ Engine\Schema\Spec.lua
 Engine\Schema\Shared.lua
 Engine\Schema\Threat.lua
 Engine\Output.lua
+Observe\Recommendation.lua
 Engine\Registry.lua
 Engine\Snapshot.lua
 
