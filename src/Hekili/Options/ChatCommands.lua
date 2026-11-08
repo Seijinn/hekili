@@ -77,6 +77,12 @@ function Hekili:CmdLine( input )
 
     local command = args[1]
 
+    -- One explicit capture. Returns before UpdateDisplayVisibility so a diagnostic run does not refresh recommendations.
+    if command == "diag" or command == "diagnostic" then
+        self:RunWarriorCapabilityDiagnostic()
+        return true
+    end
+
     -- Command handlers mapping
     local commandHandlers = {
         set      = function () self:HandleSetCommand( args ) end,
@@ -107,6 +113,18 @@ function Hekili:CmdLine( input )
         self:Print( L["Invalid command. Type '/hekili help' to see the available commands."] )
         return true
     end
+end
+
+function Hekili:RunWarriorCapabilityDiagnostic()
+    local diag = ns.WarriorCapability
+    if type(diag) ~= "table" or type(diag.Run) ~= "function" or type(diag.ClientApi) ~= "function" then
+        self:Print( L["Warrior capability diagnostic is unavailable."] )
+        return
+    end
+    diag.Run(diag.ClientApi(), function(report)
+        HekiliDiagnosticDB = report
+    end)
+    self:Print( L["Hekili diagnostic saved in HekiliDiagnosticDB. /reload or log out to write SavedVariables/Hekili.lua. Recommendations and profiles were not changed."] )
 end
 
 function Hekili:HandleSetCommand( args )
@@ -518,6 +536,7 @@ function Hekili:DisplayChatCommandList( list )
         self:Print( getCycleChunk() )
         self:Print( getSpecializationChunk() )
         self:Print( getOtherCommandsChunk() )
+        self:Print( L["Warrior capability diagnostic (one explicit capture; recommendations unchanged): |cFFFFD100/hekili diag|r\n"] )
     elseif list == "toggles" then
         self:Print( getTogglesChunk() )
     elseif list == "modes" then

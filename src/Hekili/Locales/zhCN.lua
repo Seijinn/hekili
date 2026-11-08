@@ -43,6 +43,8 @@ L["The %s, and |cFFFFD100%s|r priorities were reverted."] = "%s和|cFFFFD100%s|r
 
 -- Hekili/Options/ChatCommands.lua
 L["Invalid command. Type '/hekili help' to see the available commands."] = "无效的命令。输入“/hekili help”查看可用命令。"
+-- L["Warrior capability diagnostic is unavailable."] = ""
+-- L["Hekili diagnostic saved in HekiliDiagnosticDB. /reload or log out to write SavedVariables/Hekili.lua. Recommendations and profiles were not changed."] = ""
 L["Target Swap minimum time to die set to %d seconds."] = "切换目标的最短存活时间已设为 %d 秒。"
 L["|cFF00FF00ON|r"] = "|cFF00FF00开|r"
 L["|cFFFF0000OFF|r"] = "|cFFFF0000关|r"
@@ -83,6 +85,7 @@ L["\nExample commands for toggling specialization settings:\n - Toggle On/Off: |
 L["\nExample command for setting numeric values:\n - Set to a value within range: |cFFFFD100/hek set spec %s #|r ( %d-%d)\n"] = "\n设置数值的命令示例：\n - 设为范围内的值：|cFFFFD100/hek set spec %s #|r ( %d-%d)\n"
 L["\nExample command for setting numeric values:\n - Set to a value within range: |cFFFFD100/hek set spec %s #|r ( %.1f-%.1f)\n"] = "\n设置数值的命令示例：\n - 设为范围内的值：|cFFFFD100/hek set spec %s #|r ( %.1f-%.1f)\n"
 L["Other available commands:\n - |cFFFFD100/hekili priority|r - View or change priority settings\n - |cFFFFD100/hekili profile|r - View or change profiles\n - |cFFFFD100/hekili move|r - Unlock or lock the UI for positioning\n - |cFFFFD100/hekili enable|r or |cFFFFD100/hekili disable|r - Enable or disable the addon\n"] = "其他可用命令：\n - |cFFFFD100/hekili priority|r - 查看或更改优先级设置\n - |cFFFFD100/hekili profile|r - 查看或切换配置文件\n - |cFFFFD100/hekili move|r - 解锁或锁定界面以调整位置\n - |cFFFFD100/hekili enable|r 或 |cFFFFD100/hekili disable|r - 启用或禁用插件\n"
+-- L["Warrior capability diagnostic (one explicit capture; recommendations unchanged): |cFFFFD100/hekili diag|r\n"] = ""
 L["Addon will now gather specialization information. Select all talents and use all abilities for best results."] = "插件现在将收集专精信息。请选择所有天赋并使用所有技能，以获得最佳效果。"
 L["Use |cFFFFD100/hekili profile name|r to swap profiles. Valid profile names are:"] = "使用 |cFFFFD100/hekili profile 名称|r 切换配置文件。有效的配置文件名称："
 L["|cFF00FF00(current)|r"] = "|cFF00FF00（当前）|r"

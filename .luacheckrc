@@ -30,7 +30,7 @@ ignore = {
 
 -- Hekili's own globals (written and read)
 globals = {
-    "Hekili", "HekiliDB", "HekiliEngine", "HekiliDisplayPrimary", "HekiliDisplayAOE", "HekiliDisplayCooldowns",
+    "Hekili", "HekiliDB", "HekiliDiagnosticDB", "HekiliObserveDB", "HekiliEngine", "HekiliDisplayPrimary", "HekiliDisplayAOE", "HekiliDisplayCooldowns",
     "HekiliDisplayDefensives", "HekiliDisplayInterrupts", "HekiliNotification", "HekiliNotificationMover",
     "HekiliNotificationText", "HekiliTooltip", "HekiliCustomEditorInsertLink", "Hekili_Keyhandler",
     "Hekili_OnAddonCompartmentClick", "Hekili_OnAddonCompartmentEnter",

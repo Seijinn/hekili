@@ -34,6 +34,8 @@ L["The %s, and |cFFFFD100%s|r priorities were reverted."] = true
 
 -- Hekili/Options/ChatCommands.lua
 L["Invalid command. Type '/hekili help' to see the available commands."] = true
+L["Warrior capability diagnostic is unavailable."] = true
+L["Hekili diagnostic saved in HekiliDiagnosticDB. /reload or log out to write SavedVariables/Hekili.lua. Recommendations and profiles were not changed."] = true
 L["Target Swap minimum time to die set to %d seconds."] = true
 L["|cFF00FF00ON|r"] = true
 L["|cFFFF0000OFF|r"] = true
@@ -74,6 +76,7 @@ L["\nExample commands for toggling specialization settings:\n - Toggle On/Off: |
 L["\nExample command for setting numeric values:\n - Set to a value within range: |cFFFFD100/hek set spec %s #|r ( %d-%d)\n"] = true
 L["\nExample command for setting numeric values:\n - Set to a value within range: |cFFFFD100/hek set spec %s #|r ( %.1f-%.1f)\n"] = true
 L["Other available commands:\n - |cFFFFD100/hekili priority|r - View or change priority settings\n - |cFFFFD100/hekili profile|r - View or change profiles\n - |cFFFFD100/hekili move|r - Unlock or lock the UI for positioning\n - |cFFFFD100/hekili enable|r or |cFFFFD100/hekili disable|r - Enable or disable the addon\n"] = true
+L["Warrior capability diagnostic (one explicit capture; recommendations unchanged): |cFFFFD100/hekili diag|r\n"] = true
 L["Addon will now gather specialization information. Select all talents and use all abilities for best results."] = true
 L["Use |cFFFFD100/hekili profile name|r to swap profiles. Valid profile names are:"] = true
 L["|cFF00FF00(current)|r"] = true
